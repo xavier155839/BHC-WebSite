@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Black Horizon Contracting</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #080a0c;
+            color: #e6e6e6;
+        }
+
+        header {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 7%;
+            background: #0d1013;
+            border-bottom: 1px solid #24282c;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .logo span {
+            color: #777;
+            font-weight: normal;
+        }
+
+        nav a {
+            color: #aaa;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 14px;
+            transition: 0.2s;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .hero {
+            min-height: calc(100vh - 80px);
+            display: flex;
+            align-items: center;
+            padding: 0 10%;
+            background:
+                linear-gradient(rgba(5,7,9,0.82), rgba(5,7,9,0.95)),
+                radial-gradient(circle at center, #222b32, #080a0c 65%);
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .status {
+            color: #7d8b93;
+            font-size: 13px;
+            letter-spacing: 3px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: clamp(45px, 7vw, 90px);
+            line-height: 0.95;
+            letter-spacing: 4px;
+            margin-bottom: 25px;
+        }
+
+        h1 span {
+            color: #777;
+        }
+
+        .slogan {
+            font-size: 20px;
+            color: #aaa;
+            margin-bottom: 40px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .button {
+            padding: 14px 25px;
+            border: 1px solid #555;
+            text-decoration: none;
+            color: white;
+            font-size: 13px;
+            letter-spacing: 1px;
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            background: #e6e6e6;
+            color: #080a0c;
+        }
+
+        .button.main {
+            background: #e6e6e6;
+            color: #080a0c;
+        }
+
+        .button.main:hover {
+            background: transparent;
+            color: white;
+        }
+
+        .info {
+            position: absolute;
+            bottom: 25px;
+            right: 7%;
+            color: #555;
+            font-size: 11px;
+            letter-spacing: 2px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                padding: 0 5%;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .hero {
+                padding: 0 7%;
+            }
+
+            .buttons {
+                flex-direction: column;
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        BHC <span>// BLACK HORIZON CONTRACTING</span>
+    </div>
+
+    <nav>
+        <a href="#">ACCUEIL</a>
+        <a href="#">SERVICES</a>
+        <a href="#">OPÉRATIONS</a>
+        <a href="#">CONTACT</a>
+    </nav>
+</header>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="status">
+            BHC // PRIVATE CONTRACTING GROUP
+        </div>
+
+        <h1>
+            BLACK<br>
+            <span>HORIZON</span>
+        </h1>
+
+        <div class="slogan">
+            Beyond the Line.
+        </div>
+
+        <div class="buttons">
+            <a href="#" class="button main">DÉCOUVRIR BHC</a>
+            <a href="#" class="button">NOUS CONTACTER</a>
+        </div>
+
+    </div>
+
+</section>
+
+<div class="info">
+    SYSTEM STATUS // OPERATIONAL
+</div>
+
+</body>
+</html>
